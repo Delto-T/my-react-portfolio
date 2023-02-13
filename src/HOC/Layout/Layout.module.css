@@ -1,0 +1,17 @@
+:global .container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;  
+  }
+
+.Layout{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+}
+
+#main{
+    flex-grow: 1;
+}

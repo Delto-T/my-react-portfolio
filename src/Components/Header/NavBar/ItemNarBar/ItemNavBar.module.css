@@ -1,0 +1,10 @@
+.ItemNavBar{
+ margin: 10px;
+
+}
+
+
+.ItemNavBar a{
+    text-decoration: none;
+    color: var(--couleurThird);
+}

@@ -1,0 +1,80 @@
+
+#mainProjects{
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+#titleProjects{
+    color: var(--couleurThird);
+}
+
+#gridProjects{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* row-gap: 15px;
+    column-gap: 15px; */
+}
+
+#projet{
+    width: 250px;
+    height: 154px;
+    background-image: url('../../images/projetx2.png');
+    background-size: cover;
+    border: 2px solid var(--couleurPrincipalPair2);
+    border-radius: 8px;
+}
+
+#contactProjet{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+/* "amination" css du text */
+.animProject {
+    position: relative;
+    padding: 0;
+    width: 250px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .contentAnim {
+    opacity: 0;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--couleurPrincipalPair2);
+    background-color: rgba(255, 189, 105, 0.5);
+    width: 250px;
+    height: 154px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+  }
+  .animProject .contentAnim:hover {
+    opacity: 1;
+  }
+  .animProject .contentAnim .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  .animProject .contentAnim:hover .text {
+    opacity: 1;
+    transform: translateY(35px);
+    -webkit-transform: translateY(35px);
+  }

@@ -1,0 +1,34 @@
+
+#mainHome{
+width: inherit;
+height: 100%;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+}
+
+#columnLeft{
+    width: 48%;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    align-items: start;
+}
+
+#columnRight{
+    width: 48%;
+    
+}
+
+#titleHome{
+    color: var(--couleurThird);
+}
+
+#presentationHome{
+    text-align: left;
+    color: var(--couleurThird);
+}
+
+#imgHome{
+    width: 500px;
+}

@@ -1,0 +1,7 @@
+footer{
+    border-top: 2px solid var(--couleurThird);
+    color: var(--couleurThird);
+    margin: 30px 0;
+    text-align: left;
+}
+

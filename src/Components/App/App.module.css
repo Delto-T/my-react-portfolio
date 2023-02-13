@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+  background-color: var(--couleurPrincipalPair1);
+  color: var(--couleurPrincipalPair2);
+  height: 100vh;
+}
+
