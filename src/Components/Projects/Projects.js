@@ -8,6 +8,53 @@ import ContactButton from "../ContactButton/ContactButton";
 
 function Projects()    {
 
+
+    //Variables
+    let projectInformations=[
+        {
+            titleProject: "Project 1",
+            imgProject: imageProjet,
+            altImgProject: "image to symbolise a web project",
+            infoProject: "Ce projet blalblabla.",
+            linkToProject: "./test.js"
+        },
+        {
+            titleProject: "Project 2",
+            imgProject: imageProjet,
+            altImgProject: "image to symbolise a web project",
+            infoProject: "Ce projet blalblabla.",
+            linkToProject: "./test.js"
+        },
+        {
+            titleProject: "Project 3",
+            imgProject: imageProjet,
+            altImgProject: "image to symbolise a web project",
+            infoProject: "Ce projet blalblabla.",
+            linkToProject: "./test.js"
+        },
+        {
+            titleProject: "Project 4",
+            imgProject: imageProjet,
+            altImgProject: "image to symbolise a web project",
+            infoProject: "Ce projet blalblabla.",
+            linkToProject: "./test.js"
+        }
+    ]
+
+let projectToDisplay =(<>
+        { projectInformations.map( projectElement => (
+                <div id={styles.projet} class={styles.animProject} >
+                    <img src={projectElement.imgProject} alt={projectElement.altImgProject} />
+                    <div class={styles.contentAnim}>
+                        <a class={styles.linkToProject} href={projectElement.linkToProject}></a>
+                            <h2 class={styles.text}> {projectElement.titleProject}</h2>
+                    </div>
+                </div>
+            ))}
+    </>)
+
+
+
     // JSX
     return(
         <>
@@ -16,36 +63,11 @@ function Projects()    {
             <h1 id={styles.titleProjects}>Projects</h1>
 
             <div id={styles.gridProjects}> 
-
-                <div id={styles.projet} class={styles.animProject} >
-                    <img src={imageProjet} alt="image to symbolise a web project" />
-                    <div class={styles.contentAnim}>
-                        <h2 class={styles.text}>Projet 1</h2>
-                    </div>
-                </div>
-                <div id={styles.projet} class={styles.animProject} >
-                    <img src={imageProjet} alt="image to symbolise a web project" />
-                    <div class={styles.contentAnim}>
-                        <h2 class={styles.text}>Projet 2</h2>
-                    </div>
-                </div>
-                <div id={styles.projet} class={styles.animProject} >
-                    <img src={imageProjet} alt="image to symbolise a web project" />
-                    <div class={styles.contentAnim}>
-                        <h2 class={styles.text}>Projet 3</h2>
-                    </div>
-                </div>
-                <div id={styles.projet} class={styles.animProject} >
-                    <img src={imageProjet} alt="image to symbolise a web project" />
-                    <div class={styles.contentAnim}>
-                        <h2 class={styles.text}>Projet 4</h2>
-                    </div>
-                </div>
-
+                {projectToDisplay}
             </div>
 
             <div id={styles.contactProjet}>
-                <h1 id={styles.titleProjects}>Contactez-moi</h1>
+                <h1 id={styles.titleContact}>Contactez-moi</h1>
                 <div>
                     <ContactButton/> 
                 </div>
