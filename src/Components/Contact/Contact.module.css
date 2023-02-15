@@ -1,0 +1,36 @@
+
+#mainContact{
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    }
+    
+    #columnLeft{
+        width: 48%;
+        height: 250px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: start;
+    }
+    
+    #columnRight{
+        width: 48%;
+        
+    }
+    
+    #titleContact{
+        color: var(--couleurThird);
+    }
+    
+    #textContact{
+        text-align: left;
+        color: var(--couleurThird);
+        margin-bottom: 40px;
+    }
+    
+    #imgContact{
+        width: 500px; 
+    }
