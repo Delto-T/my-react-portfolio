@@ -41,7 +41,7 @@ function Projects()    {
         }
     ]
 
-let projectToDisplay =(<>
+    let projectToDisplay =(<>
         { projectInformations.map( projectElement => (
                 <div id={styles.projet} class={styles.animProject} >
                     <img src={projectElement.imgProject} alt={projectElement.altImgProject} />
