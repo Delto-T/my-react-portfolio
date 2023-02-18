@@ -9,6 +9,7 @@ import Layout from "../../HOC/Layout/Layout";
 import Home from "../Home/Home";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
+import ManageContactByMail from "../../Containers/ManageContactByMail/ManageContactByMail";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path={routes.HOME} element={<Home/>}/>
           <Route path={routes.PROJECTS} element={<Projects/>}/>
           <Route path={routes.CONTACT} element={<Contact/>}/>
+          <Route path={routes.SEND_MAIL} element={<ManageContactByMail/>}/>
           <Route path="*" element={<h1>Error 404</h1>} />
         </Routes>
       </Layout>

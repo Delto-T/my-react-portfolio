@@ -9,7 +9,7 @@ function ContactButton(){
     // JSX
     return(
         <>
-            <Link to={routes.CONTACT} id={styles.contactButton}>Contact</Link>
+            <Link to={routes.SEND_MAIL} id={styles.contactButton}>Contact</Link>
         </>
     );
 };

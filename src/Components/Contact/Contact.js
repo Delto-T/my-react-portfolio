@@ -20,7 +20,7 @@ function Contact()    {
                     <h1>Contact</h1>
                 </div>
                 <div id={styles.textContact}>
-                    Envie de travailler ensemble ? N'hésite pas à me contacter !
+                    Envie de travailler ensemble ? N'hésitez pas à me contacter !
                 </div>
                 <div>
                 <ContactButton/> 
