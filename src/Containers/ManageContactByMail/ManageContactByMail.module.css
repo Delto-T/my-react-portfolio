@@ -7,10 +7,22 @@
 
 .titleContact{
     color:var(--couleurThird);
-    margin-bottom: 50px;
 }
 
-.buttonSendMail{
-    width: 70px;
-    
+
+.submit{
+    width: 30%;
+    padding: 3px 0;
+    font-size: 1.1em;
+    color: var(--couleurPrincipalPair2);
+    background-color: var(--couleurThird);
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.submit:hover{
+    color: var(--couleurThird);
+    background-color: var(--couleurSecondaryPair1);
 }

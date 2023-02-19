@@ -60,7 +60,7 @@ function Projects()    {
         <>
         <div id={styles.mainProjects} className="container">
 
-            <h1 id={styles.titleProjects}>Projects</h1>
+            <h1 id={styles.titleProjects}>Projets</h1>
 
             <div id={styles.gridProjects}> 
                 {projectToDisplay}

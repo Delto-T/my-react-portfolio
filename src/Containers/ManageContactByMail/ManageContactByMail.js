@@ -134,9 +134,10 @@ function ManageContactByMail()    {
         
             emailjs.sendForm(informationsForEmailjs.ID, informationsForEmailjs.TEMPLATE , form.current, informationsForEmailjs.KEY)
               .then((result) => {
+                
                 resetForm();
               }, (error) => {
-                //   console.log(error.text);
+                  console.log(error.text);
               });
           };
 
@@ -161,8 +162,8 @@ function ManageContactByMail()    {
                 name={formElement.config.name}
                 />
             ))}
-            <div className={styles.buttonSendMail}>
-                <input type="submit" value="Envoyer" disabled={!valid}/>
+            <div>
+                <input type="submit" value="Envoyer" className={styles.submit} disabled={!valid}/>
             </div>
         </form>   
         

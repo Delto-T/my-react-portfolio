@@ -8,9 +8,9 @@
 }
 
 #headerLogo{
-    
     width: 41px;
     height: 41px;
+    border: 2px solid var(--couleurThird);
 }
 
 .Header{
