@@ -1,7 +1,7 @@
 // Library
 import React from "react";
 import styles from "./Contact.module.css";
-import imageContact from '../../images/imageContact1.png';
+import imageContact from '../../images/ampoule.png';
 
 // Component
 import ContactButton from "../ContactButton/ContactButton";
@@ -28,10 +28,8 @@ function Contact()    {
                 
             </div>
             <div id={styles.columnRight}>
-                <div >
-                    <figure>
+                <div id={styles.displayImg}>
                         <img src={imageContact} alt="Image d'un ordinateur d'un developpeur web" id={styles.imgContact}/>
-                    </figure>
                 </div>
 
             </div>

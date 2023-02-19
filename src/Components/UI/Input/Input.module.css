@@ -1,0 +1,68 @@
+.inputsDivDisplay{
+    margin-bottom: 10px;
+}
+
+.validInputs{
+    width: 400px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.validInputs:hover,
+.validInputs:focus
+{
+    border: 3px solid var(--couleurPrincipalPair2);
+    width: 400px;
+}
+
+.invalidInputs{
+    border: 2px solid rgb(150, 40, 40);
+    background-color: var(--couleurThird);
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.validTextarea{
+    resize: none;
+    width: 400px;
+    height: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px; 
+}
+
+.validTextarea:hover,
+.validTextarea:focus{
+    border: 3px solid var(--couleurPrincipalPair2);
+}
+
+.invalidTextarea{
+    resize: none;
+    width: 400px;
+    height: 100px;
+    border: 2px solid rgb(150, 40, 40);
+    background-color: var(--couleurThird);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px; 
+}
+
+
+.labelForInputs{
+    font-weight: 600;
+    color: var(--couleurThird);
+}
+
+.errorVisible{
+    opacity: 1;
+    color: rgb(249, 184, 184);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.errorInvisible{
+    opacity: 0;
+}

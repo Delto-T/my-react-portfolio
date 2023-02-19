@@ -9,30 +9,36 @@ function Input(props) {
 
     let inputElement = null;
 
+
     switch(props.type){
         case "input":
             inputElement=(
-            <div>
+            <div className={styles.inputsDivDisplay}>
                 <input
                 {...props.config}
                 id={props.id}
                 value={props.value}
-                onChange={props.changed}>
+                onChange={props.changed}
+                className={!props.valid && props.touched ? styles.invalidInputs : styles.validInputs}
+                name={props.name}
+                >
                 </input>
-                {!props.valid && props.touched ? <span>{props.error}</span> : null}
+                <div className={!props.valid && props.touched ? styles.errorVisible : styles.errorInvisible}>{props.error}</div>
             </div>
         )
         break;
         case "textarea":
             inputElement=(
-                <>
+                <div className={styles.inputsDivDisplay}>
                     <textarea
                     id={props.id}
                     value={props.value}
-                    onChange={props.changed}>
+                    onChange={props.changed}
+                    className={!props.valid && props.touched ? styles.invalidTextarea : styles.validTextarea}
+                    name={props.name}>
                     </textarea>
-                    {!props.valid && props.touched ? <span>{props.error}</span> : null}
-                </>
+                    <div className={!props.valid && props.touched ? styles.errorVisible : styles.errorInvisible}>{props.error}</div>
+                </div>
             )
         break;
     }
@@ -41,7 +47,7 @@ function Input(props) {
     //JSX
     return (
         <div className= {styles.Input}>
-            <label for={props.id}> {props.label} </label>
+            <label className={styles.labelForInputs} htmlFor={props.id}> {props.label} </label>
             {inputElement}
         </div>
     );

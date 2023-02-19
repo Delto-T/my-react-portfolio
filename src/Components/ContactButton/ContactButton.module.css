@@ -12,5 +12,5 @@
 
 #contactButton:hover {
     color: var(--couleurThird);
-    background-color: var(--couleurPrincipalPair2);
+    background-color: var(--couleurSecondaryPair1);
 }

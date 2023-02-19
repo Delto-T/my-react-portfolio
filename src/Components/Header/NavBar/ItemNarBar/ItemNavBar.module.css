@@ -8,3 +8,9 @@
     text-decoration: none;
     color: var(--couleurThird);
 }
+
+.navlinkActive {
+    text-decoration: none;
+    color: var(--couleurSecondaryPair1);
+    font-weight: 600;
+}

@@ -7,6 +7,12 @@
     color: var(--couleurThird);
 }
 
+#headerLogo{
+    
+    width: 41px;
+    height: 41px;
+}
+
 .Header{
     border-bottom: 2px solid var(--couleurThird);
     padding: 10px 15px;

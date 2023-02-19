@@ -14,7 +14,7 @@ function ItemNavBar (props){
         <li className={styles.ItemNavBar}>
             <NavLink
             to={props.to}
-            style={({isActive}) => isActive ? {color: '#111D5E'}: undefined }
+            style={({isActive}) => isActive ? {color: '#A27B5C'} : undefined }
             end={props.exact}>
                 {props.children}
             </NavLink>

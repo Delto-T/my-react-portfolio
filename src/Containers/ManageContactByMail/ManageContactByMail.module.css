@@ -1,0 +1,16 @@
+#displayInputs{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleContact{
+    color:var(--couleurThird);
+    margin-bottom: 50px;
+}
+
+.buttonSendMail{
+    width: 70px;
+    
+}

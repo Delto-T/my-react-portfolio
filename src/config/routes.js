@@ -1,5 +1,5 @@
 const routes = {
-    HOME: "/",
+    HOME: "/Accueil",
     PROJECTS: "/projects",
     CONTACT: "/contact",
     SEND_MAIL: '/Mail',

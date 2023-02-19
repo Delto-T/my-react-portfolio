@@ -1,9 +1,9 @@
 :root{
-  --couleurPrincipalPair1: #111D5E;
-  --couleurPrincipalPair2: #C70039;
-  --couleurSecondaryPair1: #F37121;
+  --couleurPrincipalPair1: #2C3639;
+  --couleurPrincipalPair2: #3F4E4F;
+  --couleurSecondaryPair1: #A27B5C;
   --couleurSecondaryPair2: rgb(255, 189, 105);
-  --couleurThird: white;
+  --couleurThird: #DCD7C9;
 }
 
 body {
