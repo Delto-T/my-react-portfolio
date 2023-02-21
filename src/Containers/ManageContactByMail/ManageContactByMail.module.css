@@ -20,9 +20,16 @@
     border: none;
     padding: 10px 20px;
     font-weight: 600;
+    cursor:pointer;
 }
 
 .submit:hover{
     color: var(--couleurThird);
     background-color: var(--couleurSecondaryPair1);
+}
+
+.submit:disabled{
+    color: lightgray;
+    background-color: grey;
+    cursor: not-allowed;
 }

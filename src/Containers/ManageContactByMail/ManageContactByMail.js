@@ -35,7 +35,7 @@ function ManageContactByMail()    {
             elementType: 'input',
             elementConfig: {
                 type: 'mail',
-                placeholder: 'mail'
+                placeholder: 'Email'
             },
             value: '',
             label: 'Votre adresse mail',

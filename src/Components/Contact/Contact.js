@@ -1,15 +1,17 @@
 // Library
 import React from "react";
 import styles from "./Contact.module.css";
+
+// Images
 import imageContact from '../../images/ampoule.png';
+import imageGitHub from '../../images/GH_logo.png';
 
 // Component
 import ContactButton from "../ContactButton/ContactButton";
 
 function Contact()    {
 
-    // Varible
-
+    let githubAdresse ="https://github.com/Delto-T";
 
     // JSX
     return(
@@ -25,6 +27,14 @@ function Contact()    {
                 <div>
                 <ContactButton/> 
                 </div>
+                <div className={styles.divSocialMediaDisplay}>
+                    <img src={imageGitHub} alt="Logo github" className={styles.logoDisplay}/>
+                    <div className={styles.divLinkContactDisplay}>
+                        <a href={githubAdresse} className={styles.linkContactDisplay}>Mon Github</a>
+                    </div>
+                        
+                </div>
+                
                 
             </div>
             <div id={styles.columnRight}>
