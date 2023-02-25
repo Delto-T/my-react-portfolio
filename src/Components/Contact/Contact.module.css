@@ -8,10 +8,10 @@
     
     #columnLeft{
         width: 50%;
-        /* height: 250px; */
+        height: 300px;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: start;
     }
     
@@ -25,6 +25,13 @@
         flex-flow: row nowrap;
         justify-content: end;
         align-items: center;
+    }
+
+    .divContactInformation{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: start;
     }
     
     #titleContact{
@@ -67,3 +74,39 @@
         height: auto;
         text-align: left;
     }
+
+    .linkContactDisplay:hover{
+        text-decoration: underline;
+    }
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+    #mainContact{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #columnLeft{
+        width: 100%;
+        flex-flow: column nowrap;
+        
+    }
+    
+    #columnRight{
+        width: 100%;
+    }
+    #imgContact{
+        width: 60%; 
+    }
+    #displayImg{
+        margin-top: 60px;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .divContactInformation{
+        align-items: center;
+    }
+
+
+}

@@ -1,7 +1,12 @@
 // Library
 import React from "react";
 import styles from "./Projects.module.css"
-import imageProjet from "../../images/projetx2.png"
+
+// Images
+import imageBlog from "../../images/blog.jpg";
+import imageTodoList from "../../images/TODO.jpg";
+import imageMarkDown from "../../images/marckdown.jpg";
+import imageMinionWar from "../../images/minionWar.jpg";
 
 // Component
 import ContactButton from "../ContactButton/ContactButton";
@@ -12,32 +17,32 @@ function Projects()    {
     //Variables
     let projectInformations=[
         {
-            titleProject: "Project 1",
-            imgProject: imageProjet,
-            altImgProject: "image to symbolise a web project",
-            infoProject: "Ce projet blalblabla.",
+            titleProject: "Blog",
+            imgProject: imageBlog,
+            altImgProject: "image of a web blog",
+            infoProject: "Blog en RECT JS",
+            linkToProject: "https://github.com/Delto-T/blog-react"
+        },
+        {
+            titleProject: "Todo List",
+            imgProject: imageTodoList,
+            altImgProject: "image of a web Todo List",
+            infoProject: "Simple Todo list react et firebase",
             linkToProject: "./test.js"
         },
         {
-            titleProject: "Project 2",
-            imgProject: imageProjet,
-            altImgProject: "image to symbolise a web project",
-            infoProject: "Ce projet blalblabla.",
-            linkToProject: "./test.js"
+            titleProject: "Markdown",
+            imgProject: imageMarkDown,
+            altImgProject: "image of a web Markdown Preview",
+            infoProject: "Markdown Preview",
+            linkToProject: "https://github.com/Delto-T/exemplePortfolio"
         },
         {
-            titleProject: "Project 3",
-            imgProject: imageProjet,
+            titleProject: "Minion War",
+            imgProject: imageMinionWar,
             altImgProject: "image to symbolise a web project",
-            infoProject: "Ce projet blalblabla.",
-            linkToProject: "./test.js"
-        },
-        {
-            titleProject: "Project 4",
-            imgProject: imageProjet,
-            altImgProject: "image to symbolise a web project",
-            infoProject: "Ce projet blalblabla.",
-            linkToProject: "./test.js"
+            infoProject: "Mini jeu pour découvrir REDUX",
+            linkToProject: "https://github.com/Delto-T/minion-game"
         }
     ]
 
@@ -48,6 +53,7 @@ function Projects()    {
                     <div class={styles.contentAnim}>
                         <a class={styles.linkToProject} href={projectElement.linkToProject}></a>
                             <h2 class={styles.text}> {projectElement.titleProject}</h2>
+                            <p class={styles.textP}> {projectElement.infoProject}</p>
                     </div>
                 </div>
             ))}

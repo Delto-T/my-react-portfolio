@@ -11,7 +11,6 @@ align-items: center;
     width: 48%;
     display: flex;
     flex-flow: column nowrap;
-    
     align-items: start;
 }
 
@@ -22,13 +21,37 @@ align-items: center;
 
 #titleHome{
     color: var(--couleurThird);
+    
 }
 
 #presentationHome{
     text-align: left;
     color: var(--couleurThird);
+    font-size: 1em;
 }
 
 #imgHome{
-    width: 500px;
+    width: 123%;
+}
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+    #mainHome{
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #columnLeft{
+        width: 100%;
+        align-items: center;
+    }
+    #columnRight{
+        margin-top: 60px;
+        width: 100%;
+    }
 }

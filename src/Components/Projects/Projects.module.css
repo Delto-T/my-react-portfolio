@@ -8,12 +8,12 @@ a{
 
 #mainProjects{
     width: inherit;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    }
+}
     
 #titleProjects{
     color: var(--couleurThird);
@@ -49,6 +49,14 @@ a{
 }
 
 
+.linkToProject{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 
 /* "amination" css du text */
 .animProject {
@@ -65,7 +73,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #a27b5c85;
+    background-color: #3f4e4fb0;
     width: 250px;
     height: 154px;
     -webkit-transition: all 400ms ease-out;
@@ -86,15 +94,46 @@ a{
   }
   .animProject .contentAnim:hover .text {
     opacity: 1;
-    transform: translateY(35px);
-    -webkit-transform: translateY(35px);
-    color: var(--couleurPrincipalPair2);
+    transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+    color: var(--couleurThird);
   }
 
-  .linkToProject{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+  .animProject .contentAnim .textP {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
   }
+  .animProject .contentAnim:hover .textP {
+    opacity: 1;
+    transform: translateY(35px);
+    -webkit-transform: translateY(35px);
+    color: var(--couleurThird);
+
+  }
+
+
+
+
+  /* All device 768 à 900px  */
+@media all and (max-width: 900px){
+
+  #gridProjects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+  #gridProjects{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #mainProjects{
+  margin-bottom: 20px;
+  }
+
+}

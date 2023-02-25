@@ -15,3 +15,39 @@
 #main{
     flex-grow: 1;
 }
+
+/* All device 900 à 1024 px  */
+@media all and (max-width: 1024px){
+
+    :global .container{
+        max-width: 800px;
+
+        }
+
+}
+
+/* All device 768 à 900px  */
+@media all and (max-width: 900px){
+
+    :global .container{
+        max-width: 700px;
+
+        }
+
+}
+
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+    :global .container{
+        max-width: 350px;
+
+    }
+
+    .Layout{
+        min-height: 100vh;
+        height: auto;
+    }
+
+}

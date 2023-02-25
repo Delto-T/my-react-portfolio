@@ -18,16 +18,20 @@ function Contact()    {
         <>
         <div id={styles.mainContact}>
             <div id={styles.columnLeft}>
-                <div id={styles.titleContact}>
-                    <h1>Contact</h1>
+                <div className={styles.divContactInformation}>
+                    <div id={styles.titleContact}>
+                        <h1>Contact</h1>
+                    </div>
+                    <div id={styles.textContact}>
+                        Envie de travailler ensemble ? N'hésitez pas à me contacter !
+                    </div>
+                    <div>
+                        <ContactButton/> 
+                    </div>
                 </div>
-                <div id={styles.textContact}>
-                    Envie de travailler ensemble ? N'hésitez pas à me contacter !
-                </div>
-                <div>
-                <ContactButton/> 
-                </div>
-                <div className={styles.divSocialMediaDisplay}>
+
+                <div className={styles.divSocialMediaDisplay}> 
+                    
                     <img src={imageGitHub} alt="Logo github" className={styles.logoDisplay}/>
                     <div className={styles.divLinkContactDisplay}>
                         <a href={githubAdresse} className={styles.linkContactDisplay}>Mon Github</a>

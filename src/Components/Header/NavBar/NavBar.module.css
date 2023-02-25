@@ -5,3 +5,12 @@
     display: flex;
     gap: 15px;
 }
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+    .NavBar{
+      flex-flow: row nowrap;
+    }
+  
+}

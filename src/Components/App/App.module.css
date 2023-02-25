@@ -5,3 +5,12 @@
   height: 100vh;
 }
 
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+  .App {
+    min-height: 100vh;
+    height: auto;
+  }
+
+}

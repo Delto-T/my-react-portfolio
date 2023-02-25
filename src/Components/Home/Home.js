@@ -10,7 +10,6 @@ function Home()    {
 
     // JSX
     return(
-        <>
         <div id={styles.mainHome}>
             <div id={styles.columnLeft}>
                 <div id={styles.titleHome}>
@@ -30,7 +29,6 @@ function Home()    {
             </div>
             
         </div>
-        </>
     );
 };
 

@@ -5,3 +5,19 @@ footer{
     text-align: left;
 }
 
+
+/* All device 768 à 900px  */
+@media all and (max-width: 900px){
+
+    footer{
+        margin: 20px 0;
+    }
+}
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+    footer{
+        margin: 10px 0;
+    }
+  }

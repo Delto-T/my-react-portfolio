@@ -23,3 +23,12 @@ code {
 * {
   box-sizing: border-box;
 }
+
+/* All device 480 à 767 px */
+@media all and (max-width: 767px){
+
+  body{
+    min-width: 480px;
+  }
+
+}
