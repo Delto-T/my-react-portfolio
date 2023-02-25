@@ -175,7 +175,7 @@ function ManageContactByMail()    {
     // JSX
     return(
         <>
-            <h1 className={styles.titleContact}>Un mot à me faire passer ?</h1>
+            <h1 className={styles.titleContact}>Un mot à me dire ?</h1>
             <div id={styles.displayInputs} className="container">
                 {formInputs}
             </div>

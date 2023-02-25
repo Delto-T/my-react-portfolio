@@ -28,14 +28,14 @@ function Projects()    {
             imgProject: imageTodoList,
             altImgProject: "image of a web Todo List",
             infoProject: "Simple Todo list react et firebase",
-            linkToProject: "./test.js"
+            linkToProject: "https://github.com/Delto-T/to-do-list-v2"
         },
         {
             titleProject: "Markdown",
             imgProject: imageMarkDown,
             altImgProject: "image of a web Markdown Preview",
             infoProject: "Markdown Preview",
-            linkToProject: "https://github.com/Delto-T/exemplePortfolio"
+            linkToProject: "https://github.com/Delto-T/projet-marckdown"
         },
         {
             titleProject: "Minion War",
