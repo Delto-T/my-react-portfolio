@@ -110,7 +110,7 @@ a{
     transform: translateY(35px);
     -webkit-transform: translateY(35px);
     color: var(--couleurThird);
-
+    padding: 0 2px;
   }
 
 

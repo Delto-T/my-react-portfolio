@@ -31,7 +31,7 @@ function Contact()    {
                 </div>
 
                 <div className={styles.divSocialMediaDisplay}> 
-                    
+                    <a href={githubAdresse} className={styles.linkGitHubDisplay}></a>
                     <img src={imageGitHub} alt="Logo github" className={styles.logoDisplay}/>
                     <div className={styles.divLinkContactDisplay}>
                         <a href={githubAdresse} className={styles.linkContactDisplay}>Mon Github</a>
@@ -43,7 +43,7 @@ function Contact()    {
             </div>
             <div id={styles.columnRight}>
                 <div id={styles.displayImg}>
-                        <img src={imageContact} alt="Image d'un ordinateur d'un developpeur web" id={styles.imgContact}/>
+                        <img src={imageContact} alt="Image d'une ampoule avec à l'intérrieur une équipe travaillant ensemble" id={styles.imgContact}/>
                 </div>
 
             </div>

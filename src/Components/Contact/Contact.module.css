@@ -79,6 +79,14 @@
         text-decoration: underline;
     }
 
+    .linkGitHubDisplay{
+        width: 140px;
+        height: 45px;
+        z-index: 1;
+        position: absolute;
+   
+    }
+
 /* All device 480 à 767 px */
 @media all and (max-width: 767px){
 
@@ -106,6 +114,11 @@
     }
     .divContactInformation{
         align-items: center;
+    }
+    .divSocialMediaDisplay{
+        justify-content: start;
+        align-items: start;
+
     }
 
 
