@@ -21,14 +21,14 @@ function Projects()    {
             imgProject: imageBlog,
             altImgProject: "image of a web blog",
             infoProject: "Blog en RECT JS",
-            linkToProject: "https://github.com/Delto-T/blog-react"
+            linkToProject: "https://blog-react-3747b.web.app/"
         },
         {
             titleProject: "Todo List",
             imgProject: imageTodoList,
             altImgProject: "image of a web Todo List",
             infoProject: "Todo list react et connectée à firebase",
-            linkToProject: "https://github.com/Delto-T/to-do-list-v2"
+            linkToProject: "https://todolistv2-2b73c.web.app/"
         },
         {
             titleProject: "Markdown",
