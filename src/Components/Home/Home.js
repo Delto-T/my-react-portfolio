@@ -8,6 +8,10 @@ import imageHome from "../../images/imageDev.png"
 
 function Home()    {
 
+
+    let textPresentation ="Bonjour je suis Thibault, un Front-end wev developpeur junior. Vous pourrez suivre sur ce site l'ensemble de mes créations tout au long de mon evolution et assiter à mon retour vers les technologies qui me passionnent. N'hésitez pas à me contacter si vous voulez apprendre à me connaitre d'avantage.";
+
+
     // JSX
     return(
         <div id={styles.mainHome}>
@@ -16,7 +20,7 @@ function Home()    {
                     <h1>Présentation</h1>
                 </div>
                 <div id={styles.presentationHome}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget arcu ante. Nam tincidunt felis arcu, et semper est aliquet ac. Vestibulum vitae consectetur est. Vivamus hendrerit mi ac turpis tempor, vitae laoreet enim consequat. Nam placerat libero elit, sed blandit ligula auctor ac. Nullam pulvinar turpis sit amet elit consectetur tincidunt.
+                    {textPresentation}
                 </div>
             </div>
             <div id={styles.columnRight}>
